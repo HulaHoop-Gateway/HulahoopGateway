@@ -11,6 +11,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/internal")
 public class UpdateSeat {
+
     @PostMapping("/seat-updated")
     public ResponseEntity<Void> handleSeatUpdate(@RequestBody Map<String, Object> payload) {
         Integer scheduleNum = (Integer) payload.get("scheduleNum");
